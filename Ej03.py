@@ -18,7 +18,8 @@ def cajero_automatico():
 
         elif opcion == "2":
             try:
-                monto = float(input("Ingrese el monto a depositar: "))
+                entrada = input("Ingrese el monto a depositar: ")
+                monto = float(entrada.replace(",", "."))
                 if (
                     monto <= 0
                 ):  # Si se desea depositar 0 o numeros negativos (invalidos)
@@ -31,7 +32,8 @@ def cajero_automatico():
 
         elif opcion == "3":
             try:
-                monto = float(input("Ingrese el monto a retirar: "))
+                entrada = input("Ingrese el monto a retirar: ")
+                monto = float(entrada.replace(",", "."))
                 if monto <= 0:  # Si se desea retirar 0 o numeros negativos (invalidos)
                     print("Error: El monto debe ser mayor que cero.")
                 elif (
