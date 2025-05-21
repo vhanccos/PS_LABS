@@ -18,41 +18,47 @@
 
 ## Dentro de la caja
 
-- Lista con solo un número.
-- Solo pares
-- Solo impares
-- Pares e impares
-- Valor entero positivo
-- Valor entero negativo
-- Valor 0
+- Cantidad de numeros dentro de la lista es mayor que 0
+- Numeros dentro de la lista son solo pares
+- Numeros dentro de la lista son solo impares
+- Numeros dentro de la lista son pares e impares
+- Numeros dentro de la lista pueden ser valores enteros positivos
+- Numeros dentro de la lista pueden ser valores enteros negativos
+- Numeros dentro de la lista pueden ser 0
 
 ## Fuera de la caja
 
-- Valor negativo para la cantidad de elementos
-- Valor decimal para la cantidad de elementos
-- Valor 0 para la cantidad de elementos
-- Valor decimal
-- Valor no numerico
-- Entrada vacia
+- Cantidad de numeros dentro de la lista es 0
+- Cantidad de numeros dentro de la lista es negativa
+- Cantidad de numeros dentro de la lista es un valor decimal
+- Cantidad de numeros dentro de la lista es un valor no numerico
+- Cantidad de numeros dentro de la lista es un valor vacio
+- Numeros dentro de la lista son valores decimales
+- Numeros dentro de la lista son valores no numericos
+- Numeros dentro de la lista son valores vacios
 
 # E3: Cajero Automatico ATM
 
 ## Dentro de la caja
 
+- Saldo inicial es correcto
 - Seleccion valida en el menu
 - Deposito positivo
 - Retiro positivo menor al saldo disponible
-- Retiro igual al saldo disponible
+- Retiro positivo e igual al saldo disponible
 - Consulta de saldo muestra el valor correcto
 
 ## Fuera de la caja
 
 - Seleccion invalida en el menu
-- Deposito negativo
-- Deposito 0
-- Retiro mayor al saldo disponible
-- Retiro negativo
-- Retiro 0
-- Retiro con monto con combinacion de billetes no valida
-
--
+- Deposito con monto no multiplo de 10 (No se puede pagar con monedas)
+- Deposito con monto negativo
+- Deposito con monto 0
+- Deposito con monto no numerico
+- Deposito con monto vacio
+- Retiro positivo mayor al saldo disponible
+- Retiro con monto no multiplo de 10 (No se pueden retirar monedas)
+- Retiro con monto negativo
+- Retiro con monto 0
+- Retiro con monto no numerico
+- Retiro con monto vacio
