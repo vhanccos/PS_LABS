@@ -2,17 +2,18 @@
 
 ## Dentro de la caja
 
-- Ambos enteros positivos
-- Entero positivo y decimal positivo
-- Decimal entero y entero positivo
-- Ambos decimales
+- Valor ingresado es entero positivo
+- Valor ingresado es decimal positivo
+- Calculo de area con ambos valores enteros positivos
+- Calculo de area con valor entero positivo y decimal positivo
+- Calculo de area con ambos valores decimales positivos
 
 ## Fuera de la caja
 
-- Entrada vacia
-- Algun valor nulo
-- Algun valor negativo
-- Valor no numerico
+- Valor ingresado es vacio
+- Valor ingresado es no numerico
+- Valor ingresado es 0
+- Valor ingresado es negativo
 
 # E2: Contador de Pares e Impares
 
