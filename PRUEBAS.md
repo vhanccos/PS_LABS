@@ -56,3 +56,7 @@
 - Retiro con monto con combinacion de billetes no valida
 
 -
+
+| Column1 | Column2 | Column3 |
+| ------- | ------- | ------- |
+| Item1   | Item1   | Item1   |
