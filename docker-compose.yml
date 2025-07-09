@@ -21,6 +21,7 @@ services:
       - "9000:9000"
     networks:
       - ${NETWORK_TYPE:-ipv4}
+
   db:
     image: postgres:17
     healthcheck:
@@ -39,16 +40,51 @@ services:
       - postgresql_data:/var/lib/postgresql/data
     networks:
       - ${NETWORK_TYPE:-ipv4}
-  scanner:
+
+  scanner-c1:
     image: sonarsource/sonar-scanner-cli
+    container_name: scanner-c1
     profiles: ["manual"]
     depends_on:
       - sonarqube
+    working_dir: /usr/src
     volumes:
-      - ./:/usr/src
+      - ./C1:/usr/src
     environment:
       SONAR_HOST_URL: http://sonarqube:9000
       SONAR_TOKEN: ${SONAR_TOKEN}
+    networks:
+      - ${NETWORK_TYPE:-ipv4}
+
+  scanner-c2:
+    image: sonarsource/sonar-scanner-cli
+    container_name: scanner-c2
+    profiles: ["manual"]
+    depends_on:
+      - sonarqube
+    working_dir: /usr/src
+    volumes:
+      - ./C2:/usr/src
+    environment:
+      SONAR_HOST_URL: http://sonarqube:9000
+      SONAR_TOKEN: ${SONAR_TOKEN}
+    networks:
+      - ${NETWORK_TYPE:-ipv4}
+
+  scanner-c3:
+    image: sonarsource/sonar-scanner-cli
+    container_name: scanner-c3
+    profiles: ["manual"]
+    depends_on:
+      - sonarqube
+    working_dir: /usr/src
+    volumes:
+      - ./C3:/usr/src
+    environment:
+      SONAR_HOST_URL: http://sonarqube:9000
+      SONAR_TOKEN: ${SONAR_TOKEN}
+    networks:
+      - ${NETWORK_TYPE:-ipv4}
 
 volumes:
   sonarqube_data:
