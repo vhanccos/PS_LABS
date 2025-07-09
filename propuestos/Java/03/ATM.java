@@ -1,4 +1,4 @@
-package EjPropuesto.Java_03;
+//package EjPropuesto.Java_03;
 
 import java.util.Scanner;
 

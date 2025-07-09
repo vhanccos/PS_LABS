@@ -1,4 +1,4 @@
-package EjPropuesto.Java_02;
+//package EjPropuesto.Java_02;
 
 import static org.junit.Assert.*;
 import org.junit.Test; 
